@@ -1,0 +1,22 @@
+{
+  "name": "andrewdobson",
+  "version": "2.0.0",
+  "description": "personal site of Andrew Dobson",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moa-mnsr/andrewdobson.git"
+  },
+  "author": "M Mansour",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moa-mnsr/andrewdobson/issues"
+  },
+  "homepage": "https://github.com/moa-mnsr/andrewdobson#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
