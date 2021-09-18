@@ -12,10 +12,22 @@ body {
 
 div.language {
     position: absolute;
-    font-size: 18px;
+    top: 0px;
+    right: 0px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
     background-color: blanchedalmond;
-    padding: .25em;
+    padding: .5em;
+    width: 18px;
+}
+
+div.language:hover {
+    background-color: tomato;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
 }
 
 div.flexbox-body {
@@ -61,22 +73,30 @@ img {
     width: 12em;
 }
 
-nav section {
+nav ul {
     border-left: .5px solid rgba(255, 0, 0, 0.5);
     border-right: .5px solid rgba(255, 0, 0, 0.5);     
 }
 
-nav section div {
+nav ul li {
     font-size: .8em;
     padding: .2em 0;
 }
 
-h1:hover, nav section div span:hover, h2 a:hover {
+
+div.language:hover, h1:hover, li:hover, h2 a:hover {
     cursor: pointer;
+}
+
+h1:hover, li span:hover, h2 a:hover {
     color: blue;
 }
 
-nav section div span:hover {
-    cursor: pointer;
+nav ul li:hover {
     color: teal;
 }
+
+li:before {
+    content: "⸺";
+    color: #050505;
+  }
